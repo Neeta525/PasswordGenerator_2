@@ -1,10 +1,21 @@
 // Assignment Code
-//tagets generate ID
+//targets generate ID
 var generateBtn = document.querySelector("#generate");
+var lowLetters = "abcdefghiklmnopqrstuvwxyz";
+var capletters = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
+var specialchar = "!@#$%^&*()<>?_+~-";
+var numbers = "0123456789";
+
+
 
 function generatePassword() {
-  console.log("Clicked Button!")
+  console.log("Your Button Works!")
 
+//window prompt  
+let pwLength = prompt("Choose length of password between 8 and 128 characters");
+if (pwLength <= 8 || pwLength >= 128) {
+alert("Try again")
+}
   return "generated password";
 }
 // Write password to the #password input

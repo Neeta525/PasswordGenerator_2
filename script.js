@@ -5,8 +5,7 @@ var lowLetters = "abcdefghiklmnopqrstuvwxyz".split("");
 var capLetters = "ABCDEFGHIJKLMNOPQRSTUVXYZ".split("");
 var specialChar = "!@#$%^&*<>?_+~-".split("");
 var numbers = "0123456789".split("");
-
-
+var pwLength = '';
 
 function generatePassword() {
   console.log("Your Button Works!")
@@ -31,6 +30,7 @@ if (yesLowLetters == true) {
 } else {
   alert("😕 No problem, we can use other characters.")
 }
+var yesLowCase = lowLetters.concat(lowLetters);
 ///asks user if they want upper case letters
 let yesCapLetters = confirm("Do upper case letters sound like something you want to use? Click OK");
 if (yesCapLetters == true) {
@@ -38,6 +38,7 @@ if (yesCapLetters == true) {
 } else {
   alert("🤨 Alright, we can use other characters.")
 }
+var yesCapCase = capLetters.concat(capLetters);
 //asks user if they want numbers
 let yesNumbers = confirm("How about we toss in some nifty numbers? Click OK");
 if (yesNumbers == true) {
@@ -45,6 +46,7 @@ if (yesNumbers == true) {
 } else {
   alert("🙄 Okay, we can use other characters.")
 }
+var yesNum = numbers.concat(numbers);
 //asks user if they want special characters
 let yesSpecialChar = confirm("Special characters are pretty gnarly, press OK to include these");
 if (yesSpecialChar == true) {
@@ -52,11 +54,17 @@ if (yesSpecialChar == true) {
 } else {
   alert("🥱 Fine, but I hope you chose at least one set of characters.")
 }
+var yesSpecial = specialChar.concat(specialChar);
 if (!yesLowLetters && !yesCapLetters && !yesNumbers && !yesSpecialChar) {
   alert("Please select at least one criteria!")
 }
-
-  return "the dang password";
+let charOptions = [].concat(yesCapCase, yesLowCase, yesNum, yesSpecial);
+console.log(charOptions);
+var theGeneratedOne = [];
+for (var i = 0; i <= pwLength; i++) {
+  theGeneratedOne +- charOptions[Math.floor(Math.random() * charOptions.length)];
+ }
+ return theGeneratedOne.join('');
 }
 // Write password to the #password input
 //calls the writePassword function

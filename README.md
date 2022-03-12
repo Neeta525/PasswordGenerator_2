@@ -1,0 +1,2 @@
+# Password Generator
+## This is a password genrator that uses prompts, alerts and confirm window boxes the user can choose which characters they want to include in their password. This was created to satify a homework requirment for week three of coding bootcamp. It served as a way to put JavaSript skills into practice. Still being very new to JavaScript I found parts of this assignment challenging. 

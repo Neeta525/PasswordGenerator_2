@@ -57,11 +57,6 @@ if (!yesLowLetters && !yesCapLetters && !yesNumbers && !yesSpecialChar) {
 let charOptions = [].concat(lowLetters, capLetters, numbers, specialChar);
 console.log(charOptions);
 
-charOptions = charOptions.concat(specialChar);
-charOptions = charOptions.concat(capLetters);
-charOptions = charOptions.concat(numbers);
-charOptions = charOptions.concat(specialChar);
-
 
 var theGeneratedOne = '';
 for (var i = 0; i <= pwLength; i++) {

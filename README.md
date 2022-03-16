@@ -3,6 +3,6 @@
 
 ## Here are a couple screenshots from this project:
 
-![alt text](Assets\screenshotPwGen2.png)
+![alt text](Assets/screenshotPwGen2.png)
 
-![alt text](Assets\screenshotPwGen1.png)
+![alt text](Assets/screenshotPwGen1.png)

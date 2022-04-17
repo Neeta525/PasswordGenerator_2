@@ -11,3 +11,21 @@ This project will work on most browsers
 ![alt text](Assets/screenshotPwGen2.png)
 
 ![alt text](Assets/screenshotPwGen1.png)
+
+#Credits
+
+## Author
+- Anita Chavez
+- :briefcase: [Portfolio](https://neeta525.github.io/Portfolio25/)
+- :octocat: [GitHub](https://github.com/Neeta525)
+
+
+## Built With:
+- HTML
+- CSS
+- JavaScript
+
+## License
+
+- MIT
+
